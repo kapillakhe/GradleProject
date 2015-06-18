@@ -11,6 +11,7 @@ repositories {
 configurations {
   testCompile
 }
+
 dependencies {
   compile 'org.springframework:spring-core:4.0.5.RELEASE'
   compile 'junit:junit:4.12'
