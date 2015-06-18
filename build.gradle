@@ -7,7 +7,8 @@ targetCompatibility = 1.7
 
 repositories {
   mavenCentral()
-} 
+}
+ 
 configurations {
   testCompile
 }
