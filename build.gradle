@@ -2,29 +2,30 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'war'
 
+
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
 repositories {
   mavenCentral()
-}
+} 
 configurations {
   testCompile
 }
 dependencies {
-  testCompile 'org.springframework:spring-core:4.0.5.RELEASE'
-  testCompile 'junit:junit:4.12'
-  testCompile 'org.springframework:spring-test:4.0.5.RELEASE'
-  testCompile 'org.springframework:spring-context:4.0.5.RELEASE'
-  testCompile 'org.springframework:spring-beans:4.0.5.RELEASE'
-  testCompile 'org.springframework:spring-tx:4.0.5.RELEASE'
+  compile 'org.springframework:spring-core:4.0.5.RELEASE'
+  compile 'junit:junit:4.12'
+  compile 'org.springframework:spring-test:4.0.5.RELEASE'
+  compile 'org.springframework:spring-context:4.0.5.RELEASE'
+  compile 'org.springframework:spring-beans:4.0.5.RELEASE'
+  compile 'org.springframework:spring-tx:4.0.5.RELEASE'
 }
  
 tasks.withType(Test) {
 testLogging {
 	events 'started', 'passed'
 }
-}
+}  
 
 
 

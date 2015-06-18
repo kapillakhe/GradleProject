@@ -1,8 +1,10 @@
-package gradle;
+package gradleTest;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
+import gradle.User;
+import gradle.UserStory;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,12 +21,7 @@ public class ContextTests {
 	@Autowired
 	protected ApplicationContext ac;
 	
-	/*@Test
-	public void testUserNotNull() {
-	UserStory story = (UserStory) ac.getBean("userStory");
-	assertNotNull(story.getUser());	
-	}*/
-
+	
 	// Not using ApplicationContext
 	// Regular non-Spring instantiation
 	// Instantiating our own UserStory, you can see that the user
