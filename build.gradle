@@ -1,14 +1,32 @@
 apply plugin: 'java'
-apply plugin: 'eclipse-wtp'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
 
 repositories {
-    mavenCentral()
+  mavenCentral()
+}
+configurations {
+  testCompile
 }
 dependencies {
-    compile 'joda-time:joda-time:2.2'
-    
+  testCompile 'org.springframework:spring-core:4.0.5.RELEASE'
+  testCompile 'junit:junit:4.12'
+  testCompile 'org.springframework:spring-test:4.0.5.RELEASE'
+  testCompile 'org.springframework:spring-context:4.0.5.RELEASE'
+  testCompile 'org.springframework:spring-beans:4.0.5.RELEASE'
+  testCompile 'org.springframework:spring-tx:4.0.5.RELEASE'
 }
-jar {
-    baseName = 'gs-gradle'
-    version =  '0.1.0'
+ 
+tasks.withType(Test) {
+testLogging {
+	events 'started', 'passed'
 }
+}
+
+
+
+
+
