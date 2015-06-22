@@ -43,15 +43,6 @@ public class ContextTests {
 	assertEquals(u.getRole(), "User");
 	}
 
-	// Using ApplicationContext
-	// Since Spring instantiated this according to the property
-	// from spring-config.xml, it overrode the default "user"
-	// role with "SuperGenius User". (This presumably
-	// is Wile E. Coyote.)
-	/*@Test
-	public void testUserRoleIsAsExpected() {
-	UserStory story = (UserStory) ac.getBean("userStory");
-	assertEquals(story.getUser().getRole(), "SuperGenius User");
-	}*/
+	
  
 }
