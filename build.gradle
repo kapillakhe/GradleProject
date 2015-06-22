@@ -8,6 +8,14 @@ targetCompatibility = 1.7
 repositories {
   mavenCentral()
 }
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
  
 configurations {
   testCompile
