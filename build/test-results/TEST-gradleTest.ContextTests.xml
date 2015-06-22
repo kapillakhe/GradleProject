@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gradleTest.ContextTests" tests="3" skipped="0" failures="1" errors="0" timestamp="2015-06-22T09:12:41" hostname="devjava" time="0.502">
+<testsuite name="gradleTest.ContextTests" tests="3" skipped="0" failures="1" errors="0" timestamp="2015-06-22T09:41:55" hostname="devjava" time="0.533">
   <properties/>
-  <testcase name="testUserRoleIsAsExpected" classname="gradleTest.ContextTests" time="0.5">
+  <testcase name="testUserRoleIsAsExpected" classname="gradleTest.ContextTests" time="0.532">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at gradleTest.ContextTests.testUserRoleIsAsExpected(ContextTests.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -55,13 +55,13 @@
 </failure>
   </testcase>
   <testcase name="testNonSpringUserDefaultRole" classname="gradleTest.ContextTests" time="0.001"/>
-  <testcase name="testUserStoryNotFromContext" classname="gradleTest.ContextTests" time="0.001"/>
+  <testcase name="testUserStoryNotFromContext" classname="gradleTest.ContextTests" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Jun 22, 2015 4:12:41 AM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+  <system-err><![CDATA[Jun 22, 2015 4:41:55 AM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
 INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
-Jun 22, 2015 4:12:41 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+Jun 22, 2015 4:41:55 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [spring-config.xml]
-Jun 22, 2015 4:12:41 AM org.springframework.context.support.GenericApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.GenericApplicationContext@e722d0c: startup date [Mon Jun 22 04:12:41 CDT 2015]; root of context hierarchy
+Jun 22, 2015 4:41:55 AM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@7b782b88: startup date [Mon Jun 22 04:41:55 CDT 2015]; root of context hierarchy
 ]]></system-err>
 </testsuite>
