@@ -50,7 +50,7 @@ public class ContextTests {
 		@Test
 		public void testUserRoleIsAsExpected() {
 		UserStory story = (UserStory) ac.getBean("userStory");
-		assertEquals(story.getUser().getRole(), "SuperGenius User");
+		assertEquals(story.getUser().getRole(), "User");
 		}
 	
  
