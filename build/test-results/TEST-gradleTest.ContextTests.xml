@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gradleTest.ContextTests" tests="3" skipped="0" failures="1" errors="0" timestamp="2015-06-22T10:21:29" hostname="devjava" time="0.52">
+<testsuite name="gradleTest.ContextTests" tests="3" skipped="0" failures="1" errors="0" timestamp="2015-06-23T11:48:34" hostname="devjava" time="0.537">
   <properties/>
-  <testcase name="testUserRoleIsAsExpected" classname="gradleTest.ContextTests" time="0.518">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+  <testcase name="testUserRoleIsAsExpected" classname="gradleTest.ContextTests" time="0.536">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;[]User&gt; but was:&lt;[SuperGenius ]User&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[]User&gt; but was:&lt;[SuperGenius ]User&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
 	at gradleTest.ContextTests.testUserRoleIsAsExpected(ContextTests.java:53)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -55,13 +57,13 @@
 </failure>
   </testcase>
   <testcase name="testNonSpringUserDefaultRole" classname="gradleTest.ContextTests" time="0.0"/>
-  <testcase name="testUserStoryNotFromContext" classname="gradleTest.ContextTests" time="0.001"/>
+  <testcase name="testUserStoryNotFromContext" classname="gradleTest.ContextTests" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Jun 22, 2015 5:21:29 AM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+  <system-err><![CDATA[Jun 23, 2015 6:48:34 AM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
 INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
-Jun 22, 2015 5:21:30 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+Jun 23, 2015 6:48:34 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [spring-config.xml]
-Jun 22, 2015 5:21:30 AM org.springframework.context.support.GenericApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.GenericApplicationContext@7b782b88: startup date [Mon Jun 22 05:21:30 CDT 2015]; root of context hierarchy
+Jun 23, 2015 6:48:35 AM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@48a97747: startup date [Tue Jun 23 06:48:35 CDT 2015]; root of context hierarchy
 ]]></system-err>
 </testsuite>
