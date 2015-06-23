@@ -42,7 +42,7 @@ public class ContextTests {
 	User u = new User();
 	assertEquals(u.getRole(), "User");
 	}
-	
+	  
 	
  
 }
